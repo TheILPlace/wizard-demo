@@ -1,0 +1,17 @@
+<p>wizard-main works!</p>
+
+<app-step1 [hidden]="currentStep !== 1">
+
+
+</app-step1>
+
+<app-step2 [hidden]="currentStep !== 2">
+
+</app-step2>
+
+<app-step3 [hidden]="currentStep !== 3"></app-step3>
+
+
+<button (click) = "prevStep()">PREV</button>
+<button (click) = "nextStep()">NEXT</button>
+
