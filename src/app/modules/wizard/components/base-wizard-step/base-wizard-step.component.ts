@@ -1,20 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
+
 @Component({
   selector: 'app-base-wizard-step',
-  templateUrl: './base-wizard-step.component.html',
-  styleUrls: ['./base-wizard-step.component.css']
+  template: '',
+  styles: []
 })
-export class BaseWizardStepComponent   {
+export class BaseWizardStepComponent    {
 
-  data: any = {};
   stepForm: FormGroup;
+  stepNumber: number;
 
   constructor() {}
 
   isStepValid(): boolean {
     return true;
   }
+
+  getStepData(): any {
+    return {};
+  }
+
+  clearStepData(): void {}
 
 }

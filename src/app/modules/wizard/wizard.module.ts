@@ -7,6 +7,8 @@ import { Step3Component } from './components/step3/step3.component';
 import { BaseWizardStepComponent } from './components/base-wizard-step/base-wizard-step.component';
 
 import {ReactiveFormsModule} from '@angular/forms';
+import { WizardMessageService } from './services/wizard-message.service';
+import { WizardDataService } from './services/wizard-data.service';
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import {ReactiveFormsModule} from '@angular/forms';
   imports: [
     CommonModule, ReactiveFormsModule
   ],
-  exports: [WizardMainComponent]
+  exports: [WizardMainComponent],
+  providers: [WizardMessageService, WizardDataService]
 })
 export class WizardModule { }
